@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Framework Tests">
+    <test name="Maven_Tests">
+        <parameter name="userName" value="user@aspireapp.com"/>
+        <parameter name="password" value="@sp1r3app"/>
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="https://aspireapp.odoo.com"/>
+        <parameter name="maxWaitTimeToPollElement" value="10"/>
+        <classes>
+            <class name="tests.CreateProduct_UpdateQuantity_PlaceManufacturingOrder_Test"/>
+        </classes>
+    </test>
+</suite>
